@@ -1,38 +1,87 @@
+.user {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+}
+
+.user:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.user-info {
+  margin-top: 10px;
+}
+
+.user-info h2 {
+  font-size: 1.4rem;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.user-info p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #555;
+}
+
 .App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin-bottom: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  padding: 1rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  background-color: #3d3d3d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: #1a1a1a;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
